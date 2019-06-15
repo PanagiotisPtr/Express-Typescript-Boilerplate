@@ -1,11 +1,11 @@
-import express from 'express';
+import express, { Express, Request, Response } from 'express';
 
-const app = express();
-const port = 8080;
+const app: Express = express();
+const port: string = '8080';
 
-app.get('/', (req , res) => {
+app.get('/', (_: Request, res: Response) => {
   res.json({
-    message: 'Hello, World!',
+    message: 'Another message',
     status: 'success'
   });
 });

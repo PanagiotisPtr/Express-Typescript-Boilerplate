@@ -5,15 +5,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = express_1.default();
-const port = 8080;
-app.get("/", (req, res) => {
+const port = '8080';
+app.get('/', (_, res) => {
     res.json({
-        message: "Hello, World!",
-        status: "success"
+        message: 'Another message',
+        status: 'success'
     });
 });
 app.listen(port, () => {
     // tslint:disable-next-line:no-console
-    console.log("Listening on port " + port);
+    console.log('Listening on port ' + port);
 });
 //# sourceMappingURL=index.js.map
